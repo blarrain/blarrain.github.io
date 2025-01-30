@@ -17,6 +17,11 @@ footer {
     padding: 2rem
 }
 
+section {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
 nav {
     padding: 1rem 0;
     position: sticky;
@@ -26,14 +31,26 @@ nav {
     background-color: #000;
 }
 
-h2 {
+h1,
+h2,
+h5 {
     font-weight: 400;
+}
+
+h2 {
     color: yellow
 }
 
 h2::before {
     content: "> ";
 }
+
+h5 {
+    font-size: 1.2rem;
+    margin-block-start: .67em;
+    margin-block-end: .67em;
+}
+
 
 .bg-color-lighter {
     background-color: #171717;
@@ -44,8 +61,7 @@ h2::before {
     padding: 1vh 2vw;
 }
 
-.btn,
-.card a {
+a {
     color: #fff;
     text-decoration: none;
 }
