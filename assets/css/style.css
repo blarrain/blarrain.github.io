@@ -18,13 +18,12 @@ footer {
 }
 
 nav {
-    padding: 1rem .5rem;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
-    justify-content: center;
+    justify-content: space-around;
+    background-color: #000;
 }
 
 h2 {
@@ -32,17 +31,62 @@ h2 {
     color: yellow
 }
 
+h2::before {
+    content: "> ";
+}
+
 .bg-color-lighter {
     background-color: #171717;
 }
 
-.btn {
-    padding: 1rem 2rem;
-    text-decoration: none;
+.btn,
+.card-body {
+    padding: 1vh 2vw;
+}
+
+.btn,
+.card a {
     color: #fff;
+    text-decoration: none;
+}
+
+.btn,
+.card {
     border: 2px solid currentColor
 }
 
+.card {
+    max-width: 360px;
+}
+
+.card-image {
+    height: 10rem;
+    background-size: cover;
+}
+
+.card:hover,
+.card:hover a,
 .btn:hover {
-    color: yellow; background-color: rgba(255, 255, 255, 0.1);
+    color: yellow;
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+li::marker {
+    content: '> ';
+}
+
+.text-green {
+    color: #7fff00
+}
+
+.row-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
 }
